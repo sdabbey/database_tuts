@@ -1,5 +1,5 @@
 # March 4, 2023 
-SQL -- Structured Query Language
+**SQL -- Structured Query Language**
 
 - Became a Standard of ANSI(American National Standards Institute) in 1986 and of ISO(International Organisation for 
 Standardization) in 1987.
