@@ -2,9 +2,9 @@
 SQL --> Structured Query Language
 
 - Became a Standard of ANSI(American National Standards Institute) in 1986 and of ISO(International Organisation for 
-Standardization) in 1987
+Standardization) in 1987.
 
-- There are different versions of SQL but they all must contain major commands(such as SELECT, UPDATE, DELETE, INSERT, WHERE) to be compliant with the ANSI standard
+- There are different versions of SQL but they all must contain major commands(such as SELECT, UPDATE, DELETE, INSERT, WHERE) to be compliant with the ANSI standard.
 
 - Northwind database is a sample used by Microsoft to demonstrate the features of some its products, including SQL Server and Microsoft Access.
 
@@ -16,16 +16,37 @@ Standardization) in 1987
 
 
 ### SELECT Statement
-Syntax:
+- Used to select data from a database
+Syntax
 : *SELECT column1, column2, ...*
   *FROM table_name;*
 
-  **SELECT DISTINCT column_name** -  Used to select the distinct record(value) in a database table
+  **SELECT DISTINCT column_name** -  Used to select the distinct record(value) in a database table.
 
-  **SELECT COUNT(DISTINCT column_name)** - Used to count the number of distinct record values. !Not supported in MS Access.
+  **SELECT COUNT(DISTINCT column_name)** - Used to count the number of distinct record values.
+  (!Not supported in MS Access.)
   
   Use the following workaround:
     **SELECT Count(*) AS new_column_name**
     **FROM (SELECT DISTINCT column_name FROM table_name);**
 
 
+### WHERE Clause
+- Used to filter records
+Syntax
+: *SELECT column1, column2, ...*
+  *FROM table_name*
+  *WHERE condition;* - Example: *WHERE Country='Sweden';* "Country='Sweden' is the condition.
+  - Uses all comparison operators
+  - Special Operators: *BETWEEN*, *LIKE*, *IN*
+  (!Used in UPDATE, DELETE, etc)
+
+
+### ORDER BY Clause
+- Used to sort the result-set in ascending or descending order.
+Syntax
+: *SELECT column1, column2, ...*
+  *FROM table_name*
+  *ORDER BY column1, column2, ... ASC|DESC;*
+
+---
