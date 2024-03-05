@@ -53,3 +53,5 @@ Syntax
 
 
 # March 5, 2023 
+### AND Operator
+- The *WHERE* Clause can contain one or many *AND* operators.
