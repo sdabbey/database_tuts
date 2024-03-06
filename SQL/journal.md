@@ -59,3 +59,21 @@ Syntax
 : *SELECT column1, column2, ...*
   *FROM table_name*
   *WHERE condition1 AND condition2 AND condition3 ...;*
+
+- Can combine the *AND* and *OR* operators.
+
+
+### OR Operator
+- The *WHERE* Clause can contain one or many *OR* operators.
+Syntax
+: *SELECT column1, column2, ...*
+  *FROM table_name*
+  *WHERE condition1 OR condition2 OR condition3 ...;*
+
+### NOT Operator
+- Used in combination with other operators to give the opposite result(Negative result)
+Syntax
+: *SELECT column1, column2, ...*
+  *FROM table_name*
+  *WHERE NOT condition;*
+
