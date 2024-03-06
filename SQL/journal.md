@@ -85,3 +85,4 @@ Syntax
 
 # March 6, 2023 
 ### INSERT INTO Statement
+- Used to insert new records in a table
