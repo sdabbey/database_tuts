@@ -77,3 +77,5 @@ Syntax
   *FROM table_name*
   *WHERE NOT condition;*
 
+  **NOT Operator and Other Operators**
+  - NOT LIKE, NOT BETWEEN, NOT IN, NOT Greater Than(NOT >), NOT Less Than(NOT < or !<(just that))
