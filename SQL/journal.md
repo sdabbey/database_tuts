@@ -86,3 +86,33 @@ Syntax
 # March 6, 2023 
 ### INSERT INTO Statement
 - Used to insert new records in a table
+- Can write the INSERT INTO statement in two ways
+  1. Used to specify both the columns and values for each. 
+  *INSERT INTO table_name(column1, column2, column3, ...)*
+  *VALUES (value1, value2, value3, ...)*
+  
+  2. Used when adding values for all the columns. Make sure the order of the values match that of the columns. 
+  *INSERT INTO table_name*
+  *VALUES (value1, value2, value3, ...)*
+
+- To insert multiple rows, comma[,] is used to separate each set of values.
+  example: **INSERT INTO Customer (CustomerName, 'Address')**
+           **VALUES** 
+           **('james', 'plot 35 blk A'),**
+           **('Mark', 'Chico 10 blk B');**
+
+
+
+### NULL Value
+- A field with a NULL value is a field with no value.
+- We use *IS NULL* AND *IS NOT NULL* operators to test for null values.
+
+*IS NULL Syntax*
+  **SELECT column_names**
+  **FROM table_name**
+  **WHERE column_name IS NULL;**
+
+*IS NOT NULL Syntax*
+  **SELECT column_names**
+  **FROM table_name**
+  **WHERE column_name is NOT NULL;**
